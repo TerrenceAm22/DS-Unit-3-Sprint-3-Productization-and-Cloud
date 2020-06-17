@@ -11,7 +11,7 @@ class Book(db.Model):
     author_id = db.Column(db.String(128))
 
     def __repr__(self):
-        return f"<Book {self.id} {self.title}>"
+        return Book (self.id) (self.title)
     
 def parse_records(database_records):
     """
